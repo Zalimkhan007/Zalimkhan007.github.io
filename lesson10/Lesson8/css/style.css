@@ -1,0 +1,18 @@
+img{
+	width: 140px;
+	height: 140px;
+	margin-bottom: 25px;
+	display: block;
+	text-align: center;
+}
+.zag{
+	margin-top: 120px;
+	text-align: center;
+	font-size: 34px;
+	margin-bottom: 100px;
+}
+.row p{
+ text-align: center;
+ vertical-align: bottom;
+ font-size: 18px;
+}
