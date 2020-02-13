@@ -1,0 +1,141 @@
+@bg: #5ba2a9; 
+@c1: #515151;
+@c2: #1b1b1b;
+@font-family: 'museo_bold', sans-serif;
+@bgs: 2rem;
+
+.ffi(){
+	 background: url(../img/shared/feedback/person-icon.svg) right 1.5rem center no-repeat;
+  background-size: @bgs;
+}
+.st(){
+	 content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.1rem;
+  margin-bottom: 15px;
+  background-color: @bg;
+} 
+.f(){
+  color: @c1;
+  font-size: 1.5rem;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'museo_reg', sans-serif;
+}
+section {
+  padding: 4rem 0 8rem;
+}
+a{
+	&:hover, &:focus, &:active{
+		 text-decoration: none;
+	}
+}
+button, input, a, textarea{
+	&:focus{
+  outline: none;
+ }
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+.section-title {
+ margin-bottom: 6rem;
+ text-align: center;
+ text-transform: uppercase;
+ font-family: @font-family;
+ font-size: 3rem;
+ color: @c2;
+ .upper-icon-wrapper{
+ 	&::before{
+   .st();
+  }
+  &::after {
+   .st();
+  }
+  .upper-icon {
+   margin-bottom: 1.5rem;
+   width: 2rem;
+   height: 2rem;
+  }
+ }
+}
+.feedback-form{
+	&s-all {
+  padding: 6rem 0 9rem 0;
+ }
+ &-statement {
+  padding: 6rem 0 0;
+ }
+ &-title {
+  margin-bottom: 6rem;
+  text-align: center;
+  h3 {
+   margin-bottom: 1.2rem;
+   font-family: @font-family;
+   font-size: 2.5rem;
+   color: @c2;
+  }
+  p {
+   font-size: 1.8rem;
+  }
+ }
+ &-input {
+  position: relative;
+  width: 100%;
+  padding: 1.4rem 4.5rem 1.4rem 1.4rem;
+  border: 2px solid #d0d0d0;
+  opacity: .5;
+  color: #454545;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transitiosn: 0.3s;
+  transition: 0.3s;
+  &::-webkit-input-placeholder {
+   .f();
+  }
+  &::-moz-placeholder {
+   .f();
+  }
+  &:-moz-placeholder {
+   .f();
+  }
+  &:-ms-input-placeholder {
+   .f();
+  }
+  &:hover, &:focus{
+  	opacity: 1;
+  }
+ }
+ .input-user {
+  .ffi();
+ }
+ .input-phone {
+  .ffi();
+ }
+ &-btn {
+  min-width: 100%;
+  padding: 1.2rem 0;
+  background-color: @bg;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  &:hover {
+   background-color: #488389;
+   border-radius: 10px;
+  }
+ }
+ .title-feedback{
+  display: block;
+ }
+ .description-feedback{
+  display: block;
+ }
+}
