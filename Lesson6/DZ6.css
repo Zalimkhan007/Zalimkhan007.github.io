@@ -1,0 +1,27 @@
+.navbar{
+	margin: 0;
+	padding: 0;
+	border: 2px solid;
+	border-radius: 20px 5px;
+	width: 800px;
+	text-align: center;
+	background: #aeaeae;
+}
+
+.navbar li{
+ display: inline;
+}
+
+.navbar a{
+ color: black;
+ padding: 5px 10px;
+ text-decoration: none;
+ font-weight: bold;
+ display: inline-block;
+ width: 120px;
+}
+
+.navbar a:hover{
+	border-radius: 20px 5px;
+	background-color: red;
+}
